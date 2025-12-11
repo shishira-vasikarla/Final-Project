@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload File</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Upload</h1>
+
+    <div class="nav-vertical">
+      <div class="nav-row">
+        <button class="nav-btn" onclick="location.href='upload.html'">Upload</button>
+        <button class="nav-btn" onclick="location.href='myfiles.html'">My Files</button>
+        <button class="nav-btn" onclick="location.href='downloads.html'">Downloads</button>
+      </div>
+    
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+    
+
+    <form id="uploadForm">
+      <label>Select File (.pdf or .mp4, max 20MB)</label>
+      <input id="fileInput" type="file" required />
+
+      <label>Privacy</label>
+      <select id="privacySelect" required>
+        <option value="public">Public</option>
+        <option value="private">Private (share link only)</option>
+      </select>
+
+      <button type="submit">Upload File</button>
+    </form>
+
+    <p id="msg"></p>
+    <p id="shareBox"></p>
+  </div>
+
+  <script src="js/upload.js"></script>
+</body>
+</html>

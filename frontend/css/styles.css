@@ -1,0 +1,302 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 350px;
+    margin: 70px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #1e4ed8;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .success {
+    color: green;
+  }
+  
+  .error {
+    color: red;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 6px;
+  }
+  
+  .nav a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .logout {
+    background: #ef4444;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  
+  .logout:hover {
+    background: #dc2626;
+  }
+  .file-card {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .meta {
+    font-size: 12px;
+    color: #555;
+    margin: 6px 0;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .actions button {
+    width: auto;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  
+  .danger {
+    background: #ef4444;
+  }
+  .danger:hover {
+    background: #dc2626;
+  }
+  
+  .share {
+    margin-top: 8px;
+    font-size: 12px;
+    word-break: break-all;
+  }
+   */
+
+   body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 350px;
+    margin: 70px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #1e4ed8;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .success {
+    color: green;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  /* ---------------- NEW NAV STYLE ---------------- */
+  /* This replaces your old .nav / .logout styles */
+  
+  .nav-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    padding: 12px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+  }
+  
+  .nav-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .nav-btn {
+    width: auto;
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    background: #eef2ff;
+    color: #2563eb;
+    border: 1px solid #dbeafe;
+    cursor: pointer;
+  }
+  
+  .nav-btn:hover {
+    background: #e0e7ff;
+  }
+  
+  .logout-btn {
+    width: 100%;
+    margin: 0;
+    background: #e83e3e;
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  .logout-btn:hover {
+    background: #dc2626;
+  }
+  
+  /* ---------------- FILE CARDS ---------------- */
+  
+  .file-card {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .meta {
+    font-size: 12px;
+    color: #555;
+    margin: 6px 0;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .actions button {
+    width: auto;
+    padding: 6px 10px;
+    font-size: 12px;
+    margin-top: 0; /* so action buttons don't push down */
+  }
+  
+  .danger {
+    background: #ef4444;
+  }
+  .danger:hover {
+    background: #dc2626;
+  }
+  
+  .share {
+    margin-top: 8px;
+    font-size: 12px;
+    word-break: break-all;
+  }
+  
+
+
+  /*Database code:
+  
+  sqlite3 database.sqlite
+
+.tables
+
+.headers on
+.mode column
+
+SELECT id, username, email, created_at FROM users;
+
+SELECT id, filename, privacy, size, uploaded_by, uploaded_at, share_token
+FROM files
+ORDER BY uploaded_at DESC;
+
